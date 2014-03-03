@@ -46,4 +46,10 @@ public class CardTest {
         Card card = new Card("5", "Spade");
         assertThat(card.getCard(), is(new Card("5", "Spade")));
     }
+
+    @Test
+    public void should_get_correct_card_path() {
+        Card card = new Card("4","Club");
+        assertThat(card.getCardPath(), is("images/images/cards/Clubs/4.jpg"));
+    }
 }

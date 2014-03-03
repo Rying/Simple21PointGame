@@ -44,4 +44,8 @@ public class Card {
     public Card getCard() {
         return this;
     }
+
+    public String getCardPath() {
+        return "images/images/cards/" + suit + "s/" + mark + ".jpg";
+    }
 }

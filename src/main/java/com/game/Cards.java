@@ -1,10 +1,7 @@
 package com.game;
 
 
-import com.google.common.base.Function;
-
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
 
@@ -13,6 +10,7 @@ import static java.util.Collections.swap;
 public class Cards {
 
     public static final int TOTAL = 52;
+    private static final int TIME = 30;
     private List<Card> cards;
 
     public Cards() {
@@ -31,10 +29,10 @@ public class Cards {
         return cards.get(index);
     }
 
-    public void oneReshuffle(Random random) {
-        int splitPosition = random.nextInt(TOTAL);
-        for (int index = 0; index + splitPosition < TOTAL; index++) {
-            swap(cards, index, index + splitPosition);
+    public void Reshuffle() {
+        Random random = new Random(System.currentTimeMillis());
+        for (int index = 0; index < TOTAL; index++) {
+            swap(cards, index, random.nextInt(TOTAL));
         }
     }
 }
