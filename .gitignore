@@ -4,3 +4,4 @@ out/
 build.gradle
 *.iml
 *.iws
+/src/main/webapp/WEB-INF/pages/images
