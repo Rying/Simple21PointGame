@@ -1,0 +1,9 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<testsuite name="com.game.ScorerTest" tests="3" failures="0" errors="0" timestamp="2014-03-05T02:05:34" hostname="ry-PC" time="0.001">
+  <properties/>
+  <testcase name="should_init_scorer_is_0" classname="com.game.ScorerTest" time="0.0"/>
+  <testcase name="should_set_score_0" classname="com.game.ScorerTest" time="0.0"/>
+  <testcase name="should_get_card_4_player_score_add_4" classname="com.game.ScorerTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

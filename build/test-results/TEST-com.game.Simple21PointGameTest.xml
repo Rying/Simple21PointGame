@@ -1,0 +1,16 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<testsuite name="com.game.Simple21PointGameTest" tests="10" failures="0" errors="0" timestamp="2014-03-05T02:05:34" hostname="ry-PC" time="0.013">
+  <properties/>
+  <testcase name="should_start_cards_index_4" classname="com.game.Simple21PointGameTest" time="0.004"/>
+  <testcase name="should_start_role_is_player" classname="com.game.Simple21PointGameTest" time="0.001"/>
+  <testcase name="should_start_player_score_is_not_0" classname="com.game.Simple21PointGameTest" time="0.001"/>
+  <testcase name="should_start_host_score_is_not_0" classname="com.game.Simple21PointGameTest" time="0.0"/>
+  <testcase name="should_start_player_cards_path_correct" classname="com.game.Simple21PointGameTest" time="0.0"/>
+  <testcase name="should_player_hit_card_get_correct_score" classname="com.game.Simple21PointGameTest" time="0.0"/>
+  <testcase name="should_player_hit_card_get_correct_img_path" classname="com.game.Simple21PointGameTest" time="0.0"/>
+  <testcase name="should_player_stay_role_is_host" classname="com.game.Simple21PointGameTest" time="0.001"/>
+  <testcase name="should_player_score_22_host_win" classname="com.game.Simple21PointGameTest" time="0.0"/>
+  <testcase name="should_clean_game_state_refreshed" classname="com.game.Simple21PointGameTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

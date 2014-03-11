@@ -3,11 +3,13 @@
 <style>
 h2{font-size:36px;text-align:center;color:gray}
 h3{font-size:20px;text-align:center;color:green;margin:10px}
+h4{font-size:28px;text-align:center;color:red;margin:10px}
 </style>
 </head>
 <body>
 <h2>Score</h2>
 <h3>${playerScore}</h3>
+<h4>${result}</h4>
 <h3>${hostScore}</h3>
 </body>
 </html>

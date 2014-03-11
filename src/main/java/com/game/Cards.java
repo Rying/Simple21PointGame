@@ -30,7 +30,7 @@ public class Cards {
     }
 
     public void Reshuffle() {
-        Random random = new Random(System.currentTimeMillis());
+        Random random = new Random();
         for (int index = 0; index < TOTAL; index++) {
             swap(cards, index, random.nextInt(TOTAL));
         }

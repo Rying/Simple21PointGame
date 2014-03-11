@@ -23,7 +23,7 @@ public class ScorerTest {
 
     @Test
     public void should_set_score_0() {
-        Scorer scorer =new Scorer(5);
+        Scorer scorer = new Scorer(5);
 
         scorer.setScore(0);
         assertThat(scorer.getScore(), is(0));

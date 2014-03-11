@@ -46,6 +46,6 @@ public class Card {
     }
 
     public String getCardPath() {
-        return "images/images/cards/" + suit + "s/" + mark + ".jpg";
+        return System.getProperty("user.dir") + "/images/images/cards/" + suit + "s/" + mark + ".jpg";
     }
 }
