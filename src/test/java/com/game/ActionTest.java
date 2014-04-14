@@ -32,6 +32,6 @@ public class ActionTest {
         action.hit(new Card("5", "Club"));
         action.backCard(0);
 
-        assertThat(action.getCards().get(0), is(System.getProperty("user.dir") + "/images/images/stick_small.jpg"));
+        assertThat(action.getCards().get(0), is("/images/stick_small.jpg"));
     }
 }

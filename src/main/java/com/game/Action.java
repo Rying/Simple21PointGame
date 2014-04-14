@@ -46,6 +46,6 @@ public class Action {
     }
 
     public void backCard(int cardIndex) {
-        cards.set(cardIndex, System.getProperty("user.dir") + "/images/images/stick_small.jpg");
+        cards.set(cardIndex, "/images/stick_small.jpg");
     }
 }

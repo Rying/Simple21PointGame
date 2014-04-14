@@ -1,7 +1,7 @@
 <?xml version="1.1" encoding="UTF-8"?>
-<testsuite name="com.game.ActionTest" tests="3" failures="0" errors="0" timestamp="2014-03-05T02:05:34" hostname="ry-PC" time="0.01">
+<testsuite name="com.game.ActionTest" tests="3" failures="0" errors="0" timestamp="2014-04-10T07:56:24" hostname="ry-PC" time="0.015">
   <properties/>
-  <testcase name="should_back_card_get_back_img_path" classname="com.game.ActionTest" time="0.009"/>
+  <testcase name="should_back_card_get_back_img_path" classname="com.game.ActionTest" time="0.015"/>
   <testcase name="should_hit_card_5_club_get_card_path" classname="com.game.ActionTest" time="0.0"/>
   <testcase name="should_hit_card_5_club_get_5_score" classname="com.game.ActionTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>

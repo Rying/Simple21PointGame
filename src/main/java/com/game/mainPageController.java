@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Random;
 
 
-
 @Controller
 @RequestMapping("/mainPage")
 public class MainPageController {
@@ -29,13 +28,12 @@ public class MainPageController {
         model.addAttribute("result", game.getResult());
         model.addAttribute("playerScore", game.getRole().PLAYER.getScore());
         model.addAttribute("hostScore", game.getRole().HOST.getScore());
-        model.addAttribute("playerCardPaths",game.getRole().PLAYER.getCards());
-        model.addAttribute("hostCardPaths",game.getRole().HOST.getCards());
+        model.addAttribute("playerCardPaths", game.getRole().PLAYER.getCards());
+        model.addAttribute("hostCardPaths", game.getRole().HOST.getCards());
     }
 
     @RequestMapping(params = "method=Start")
     public String Start(ModelMap model) {
-        game.clean();
         game.start();
 
         addAttributes(model);
@@ -45,8 +43,7 @@ public class MainPageController {
 
     @RequestMapping(params = "method=Hit")
     public String Hit(ModelMap model) {
-        if (game.getRole().getScore() <= 21)
-            game.hit();
+        game.hit();
 
         addAttributes(model);
 
@@ -58,9 +55,8 @@ public class MainPageController {
         game.stay();
         Random random = new Random();
 
-        while (random.nextInt(10)%2 ==0)
-        {
-            Hit(model);
+        while (random.nextInt(10) % 2 == 0) {
+            game.hit();
             wait(2000);
         }
         game.stay();
@@ -68,4 +64,5 @@ public class MainPageController {
         addAttributes(model);
         return "mainPage";
     }
+
 }

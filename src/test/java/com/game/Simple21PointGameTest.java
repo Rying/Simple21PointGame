@@ -32,7 +32,7 @@ public class Simple21PointGameTest {
 
         simple21PointGame.start();
 
-        assertThat(simple21PointGame.getRole().PLAYER.getCards().get(0), is(System.getProperty("user.dir") + "/images/images/stick_small.jpg"));
+        assertThat(simple21PointGame.getRole().PLAYER.getCards().get(0), is("/images/stick_small.jpg"));
     }
 
     @Test

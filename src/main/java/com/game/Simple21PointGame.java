@@ -1,6 +1,5 @@
 package com.game;
 
-import javax.naming.directory.Attribute;
 import java.util.List;
 
 public class Simple21PointGame {
@@ -42,16 +41,15 @@ public class Simple21PointGame {
     }
 
     public void start() {
-        if (!over) {
-            for (int i = 0; i < 2; i++) {
-                role.PLAYER.hit(cards.getCard(cardsIndex++));
-                role.HOST.hit(cards.getCard(cardsIndex++));
+        clean();
+        for (int i = 0; i < 2; i++) {
+            role.PLAYER.hit(cards.getCard(cardsIndex++));
+            role.HOST.hit(cards.getCard(cardsIndex++));
 
-                role.PLAYER.backCard(i);
-                role.HOST.backCard(i);
-            }
-            role = Role.PLAYER;
+            role.PLAYER.backCard(i);
+            role.HOST.backCard(i);
         }
+        role = Role.PLAYER;
     }
 
     public Role getRole() {
@@ -65,7 +63,13 @@ public class Simple21PointGame {
     public void hit() {
         if (!over) {
             role.hit(cards.getCard(cardsIndex));
-            checkResult(role.PLAYER.getScore(), role.HOST.getScore());
+            check();
+        }
+    }
+
+    private void check() {
+        if (role.getScore() > 21) {
+            gameover();
         }
     }
 
@@ -73,7 +77,7 @@ public class Simple21PointGame {
         if (role.equals(Role.PLAYER))
             setRole(Role.HOST);
         else
-            over = true;
+            gameover();
     }
 
     public String getResult() {
@@ -110,5 +114,10 @@ public class Simple21PointGame {
 
     public List<String> getCardPaths() {
         return role.getCards();
+    }
+
+    public void gameover() {
+        over = true;
+        checkResult(role.PLAYER.getScore(), role.HOST.getScore());
     }
 }

@@ -1,5 +1,5 @@
 <?xml version="1.1" encoding="UTF-8"?>
-<testsuite name="com.game.CardTest" tests="7" failures="0" errors="0" timestamp="2014-03-05T02:05:34" hostname="ry-PC" time="0.004">
+<testsuite name="com.game.CardTest" tests="7" failures="0" errors="0" timestamp="2014-04-10T07:56:24" hostname="ry-PC" time="0.016">
   <properties/>
   <testcase name="should_get_card_A" classname="com.game.CardTest" time="0.0"/>
   <testcase name="should_not_get_card_1" classname="com.game.CardTest" time="0.0"/>
@@ -7,7 +7,7 @@
   <testcase name="should_card_5_point_5" classname="com.game.CardTest" time="0.0"/>
   <testcase name="should_get_Spade" classname="com.game.CardTest" time="0.0"/>
   <testcase name="should_get_Spade_5" classname="com.game.CardTest" time="0.0"/>
-  <testcase name="should_get_correct_card_path" classname="com.game.CardTest" time="0.0"/>
+  <testcase name="should_get_correct_card_path" classname="com.game.CardTest" time="0.016"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

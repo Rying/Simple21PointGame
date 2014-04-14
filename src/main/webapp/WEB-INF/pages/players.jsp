@@ -2,8 +2,8 @@
 <head>
 <style type="text/css">
 div#playersContainer
-div#playerPart{height:300px;width:650px;float:up;}
-div#hostPart{width:650px;height:300px;margin-top:20px;float:up;}
+div#playerPart{height:300px;width:650px;}
+div#hostPart{width:650px;height:300px;margin-top:20px;}
 </style>
 </head>
 

@@ -50,6 +50,6 @@ public class CardTest {
     @Test
     public void should_get_correct_card_path() {
         Card card = new Card("4", "Club");
-        assertThat(card.getCardPath(), is(System.getProperty("user.dir") + "/images/images/cards/Clubs/4.jpg"));
+        assertThat(card.getCardPath(), is("/images/cards/Clubs/4.jpg"));
     }
 }

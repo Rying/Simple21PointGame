@@ -1,8 +1,8 @@
 <?xml version="1.1" encoding="UTF-8"?>
-<testsuite name="com.game.CardsTest" tests="2" failures="0" errors="0" timestamp="2014-03-05T02:05:34" hostname="ry-PC" time="0.003">
+<testsuite name="com.game.CardsTest" tests="2" failures="0" errors="0" timestamp="2014-04-10T07:56:24" hostname="ry-PC" time="0.0">
   <properties/>
-  <testcase name="should_card_1_is_Club_2" classname="com.game.CardsTest" time="0.001"/>
-  <testcase name="should_card_0_is_different_after_reshuffle" classname="com.game.CardsTest" time="0.001"/>
+  <testcase name="should_card_1_is_Club_2" classname="com.game.CardsTest" time="0.0"/>
+  <testcase name="should_card_0_is_different_after_reshuffle" classname="com.game.CardsTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
