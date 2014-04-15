@@ -18,7 +18,7 @@
         <property name="suffix" value=".jsp"/>
     </bean>
 
-    <mvc:resources mapping="/images/**" location="classpath:/resources/images/images/"/>
+    <mvc:resources mapping="/images/**" location="/resources/images/images/"/>
 
 </beans>
 
